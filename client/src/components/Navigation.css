@@ -1,0 +1,16 @@
+.Navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+
+.Navigation__item a {
+  text-decoration: none;
+  color: black;
+}
+
+.Navigation__item a.active {
+  color: darkblue;
+  font-weight: bold;
+}
