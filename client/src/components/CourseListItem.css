@@ -1,0 +1,39 @@
+.CourseListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0px 1px 4px 0px rgba(53, 50, 50, 0.56);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.CourseListItem:hover {
+  background-color: lightblue;
+  color: whitesmoke;
+}
+
+.CourseListItem__index {
+  margin-right: 0.5em;
+}
+
+.CourseListItem__details {
+  flex-grow: 1;
+}
+
+.CourseListItem__name {
+  font-size: 1.2rem;
+}
+
+.CourseListItem__location {
+  font-size: 0.9rem;
+}
+
+.CourseListItem__nav-button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 2rem;
+  padding: 0;
+  cursor: pointer;
+}

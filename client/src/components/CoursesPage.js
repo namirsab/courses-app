@@ -1,5 +1,11 @@
+import CoursesList from "./CoursesList";
+
 function CoursesPage() {
-  return <div>Courses Page</div>;
+  return (
+    <div className="CoursesPage">
+      <CoursesList />
+    </div>
+  );
 }
 
 export default CoursesPage;
