@@ -1,0 +1,11 @@
+.CourseListItem {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightblue;
+  margin: 0.5rem;
+}
+
+.CourseListItem__details {
+  flex-grow: 1;
+  margin-left: 0.5rem;
+}
