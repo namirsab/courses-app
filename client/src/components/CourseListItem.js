@@ -1,6 +1,16 @@
 import "./CourseListItem.css";
 
-function CourseListItem({ courseIndex, courseName, courseLocation }) {
+function CourseListItem({
+  id,
+  courseIndex,
+  courseName,
+  courseLocation,
+  onClick,
+}) {
+  function handleButtonClick() {
+    onClick(id);
+  }
+
   return (
     <div className="CourseListItem">
       <div className="CourseListItem__index">{courseIndex}</div>
@@ -8,7 +18,9 @@ function CourseListItem({ courseIndex, courseName, courseLocation }) {
         <div className="CourseListItem__name">{courseName}</div>
         <div className="CourseListItem__location">{courseLocation}</div>
       </div>
-      <button className="CourseListItem__button">{"->"}</button>
+      <button onClick={handleButtonClick} className="CourseListItem__button">
+        {"->"}
+      </button>
     </div>
   );
 }

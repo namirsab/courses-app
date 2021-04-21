@@ -50,14 +50,21 @@ function CourseList() {
       return (
         <CourseListItem
           key={course._id}
+          id={course._id}
           courseIndex={index + 1}
           courseName={course.name}
           courseLocation={course.location}
+          onClick={handleCourseClick}
         />
       );
     });
 
     return coursesComponents;
+  }
+
+  function handleCourseClick(id) {
+    // TODO: Move the user to the View Single Course page
+    console.log(`Course with id ${id} was clicked`);
   }
 
   return (
