@@ -1,6 +1,6 @@
 .App {
   display: grid;
-  min-height: 100vh;
+  height: 100vh;
   grid-template-rows: [header] auto [content] 1fr [footer] auto;
   font-family: sans-serif;
 }
@@ -13,6 +13,7 @@
 
 .App__content {
   overflow-y: scroll;
+  padding: 1rem;
 }
 
 .App__nav-footer {
